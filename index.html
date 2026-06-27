@@ -99,8 +99,8 @@
     animation: wiggle 4.5s ease-in-out infinite;
   }
   @keyframes wiggle{
-    0%, 100%{ transform: rotate(-1.2deg); }
-    50%{ transform: rotate(1.2deg); }
+    0%, 100%{ transform: rotate(-3.2deg); }
+    50%{ transform: rotate(3.2deg); }
   }
   .topbar .sparkle{
     position:absolute;
@@ -137,7 +137,7 @@
     background: linear-gradient(160deg, #ffffff 0%, #fff5f9 60%, #ffe9f2 100%);
     border-radius: 22px;
     border: 3px dashed rgba(255,45,137,.35);
-    padding: clamp(8px,1.2vw,14px);
+    padding: clamp(8px,0.2vw,14px);
     display:flex;
     flex-direction:column;
     box-shadow: 0 10px 0 -4px rgba(194,24,91,.18), 0 14px 30px rgba(255,45,137,.25);
@@ -310,22 +310,16 @@
     <span class="sparkle" style="right:9%; top:2px; animation-delay:.4s;">💗</span>
     <span class="sparkle" style="left:50%; top:-6px; animation-delay:.8s;">⭐</span>
     <h1>my coding projects</h1>
-    <div class="tagline">click "visit" to open the live project ✦ hover the cards</div>
+    <div class="tagline">click "visit" to open the live projects ✦ enjoy!</div>
   </div>
 
   <div class="grid" id="grid">
-    <!-- Cards are generated from the PROJECTS array below.
-         Replace image, url, title, desc and tags with your own projects. -->
   </div>
 
 </div>
 
 <script>
-  // ---------------------------------------------------------------
-  // 1) YOUR PROJECTS — edit this array to swap in real projects.
-  //    image: leave empty "" to show the cute emoji placeholder,
-  //    or put an image URL / path to show a real screenshot.
-  // ---------------------------------------------------------------
+
   const PROJECTS = [
     {
       title: "Geschirrspühler-Liste",
@@ -333,7 +327,7 @@
       tags: ["JavaScript", "Mock-API", "Login"],
       image: "fotos/img_Website_Preview_GESCHIRRSPÜHLER.png",
       emoji: "🕹️",
-      url: "#"
+      url: "https://jojokitten.github.io/GeschirrProjekt/"
     },
     {
       title: "Vatertags Website",
@@ -365,7 +359,7 @@
       tags: ["Navbar", "#Vrohni-Ihr-ÜHli"],
       image: "fotos/img_Website_Preview_NAVBARr.png",
       emoji: "🎨",
-      url: "#"
+      url: "https://jojokitten.github.io/NAVBAR_Website_for_Portfolio3/"
     },
     {
       title: "Very first coding try",
